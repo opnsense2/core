@@ -29,10 +29,10 @@ all:
 .include "Mk/defaults.mk"
 
 CORE_ABI?=	23.1
-CORE_MESSAGE?=	Carry on my wayward son
-CORE_NAME?=	opnsense-devel
-CORE_NICKNAME?=	Not Yet
-CORE_TYPE?=	development
+CORE_MESSAGE?=	I'm no chicken
+CORE_NAME?=	opnsense
+CORE_NICKNAME?=	Quintessential Quail
+CORE_TYPE?=	community
 
 .for REPLACEMENT in ABI PHP PYTHON
 . if empty(CORE_${REPLACEMENT})
@@ -114,16 +114,16 @@ CORE_PKGVERSION=	${CORE_VERSION}
 CORE_PYTHON_DOT=	${CORE_PYTHON:C/./&./1}
 
 CORE_COMMENT?=		${CORE_PRODUCT} ${CORE_TYPE} release
-CORE_MAINTAINER?=	project@opnsense.org
+CORE_MAINTAINER?=	project@softwarename.org
 CORE_ORIGIN?=		opnsense/${CORE_NAME}
 CORE_PACKAGESITE?=	https://pkg.opnsense.org
-CORE_PRODUCT?=		OPNsense
+CORE_PRODUCT?=		SoftwareName
 CORE_REPOSITORY?=	${CORE_ABI}/latest
-CORE_WWW?=		https://opnsense.org/
+CORE_WWW?=		https://softwarename.org/
 
-CORE_COPYRIGHT_HOLDER?=	Deciso B.V.
-CORE_COPYRIGHT_WWW?=	https://www.deciso.com/
-CORE_COPYRIGHT_YEARS?=	2014-2023
+CORE_COPYRIGHT_HOLDER?=	SoftwareName B.V.
+CORE_COPYRIGHT_WWW?=	https://www.softwarename.org/
+CORE_COPYRIGHT_YEARS?=	2010-2025
 
 CORE_DEPENDS_amd64?=	beep \
 			py${CORE_PYTHON}-duckdb \

@@ -1,0 +1,5 @@
+localhost: {
+  url          : "file:///usr/local/.pkg",
+  priority     : 1,
+  enabled      : yes
+}

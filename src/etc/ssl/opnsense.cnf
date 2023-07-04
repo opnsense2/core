@@ -4,6 +4,8 @@
 # This is mostly being used for generation of certificate requests.
 #
 
+openssl_conf = openssl_def
+
 # This definition stops the following lines choking if HOME isn't
 # defined.
 HOME			= .
@@ -310,3 +312,16 @@ authorityKeyIdentifier = keyid,issuer:always
 ###OPNsense:keyUsage###
 ###OPNsense:extendedKeyUsage###
 ###OPNsense:basicConstraints###
+
+[openssl_def]
+engines = engine_section
+
+# Engine scetion
+[engine_section]
+gost = gost_section
+
+# Engine gost section
+[gost_section]
+engine_id = gost 
+default_algorithms = ALL
+CRYPT_PARAMS = id-Gost28147-89-CryptoPro-A-ParamSet

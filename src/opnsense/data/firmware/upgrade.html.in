@@ -12,5 +12,5 @@ typing "%%UPGRADE_RELEASE%%" when prompted.</p>
 changes.</p>
 <p>Please backup your configuration, preview the new version via live image or
 in a virtual machine. Create snapshots. If all else fails, report back
-<a href="https://forum.opnsense.org/" target="_blank">in the forums</a> for
+<a href="https://www.dds.systems/Контакты/" target="_blank">in the forums</a> for
 assistance.</p>

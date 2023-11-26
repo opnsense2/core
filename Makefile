@@ -114,16 +114,16 @@ CORE_PKGVERSION=	${CORE_VERSION}
 CORE_PYTHON_DOT=	${CORE_PYTHON:C/./&./1}
 
 CORE_COMMENT?=		${CORE_PRODUCT} ${CORE_TYPE} release
-CORE_MAINTAINER?=	project@softwarename.org
+CORE_MAINTAINER?=	admin@dds.systems
 CORE_ORIGIN?=		opnsense/${CORE_NAME}
 CORE_PACKAGESITE?=	https://pkg.opnsense.org
-CORE_PRODUCT?=		SoftwareName
+CORE_PRODUCT?=		Gateway
 CORE_REPOSITORY?=	${CORE_ABI}/latest
-CORE_WWW?=		https://softwarename.org/
+CORE_WWW?=		https://www.dds.systems/
 
-CORE_COPYRIGHT_HOLDER?=	SoftwareName B.V.
-CORE_COPYRIGHT_WWW?=	https://www.softwarename.org/
-CORE_COPYRIGHT_YEARS?=	2010-2025
+CORE_COPYRIGHT_HOLDER?=	Gateway
+CORE_COPYRIGHT_WWW?=	https://www.dds.systems/
+CORE_COPYRIGHT_YEARS?=	2023
 
 CORE_DEPENDS_amd64?=	beep \
 			py${CORE_PYTHON}-duckdb \

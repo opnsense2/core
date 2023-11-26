@@ -55,7 +55,7 @@ if (!empty($config['widgets']['rssfeed'])) {
     $textarea_txt =  str_replace(",", "\n", $config['widgets']['rssfeed']);
 } else {
     // Set a default feed if none exists
-    $rss_feed_s = 'https://forum.opnsense.org/index.php?board=11.0&action=.xml;limit=20;type=rss2';
+    $rss_feed_s = 'https://www.dds.systems';
     $config['widgets']['rssfeed'] = $rss_feed_s;
     $textarea_txt = '';
 }
